@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/space-mono-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/space-mono-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/space-mono-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/space-mono-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* space-mono-700 - latin */
 @font-face {
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('../fonts/space-mono-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/space-mono-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/space-mono-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/space-mono-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lexend-deca-regular - latin */
@@ -23,14 +23,17 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root{
-    /* --header-bg-color: #fff; */
-    /* --main-bg-color: #fff; */
-    /* main-text-color: #fff; */
+  --header-bg-color: #fff;
+  --main-bg-color: #fff;
+  --main-text-color: #495567;
+  --subtitle-text-color: #939CAA;
+  --main-btn-color: #FCB72B;
+  --footer-bg-color: #333A44;
 }
 
 /* GENERAL */
@@ -81,3 +84,66 @@ img {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/************** HEADER STYLES START **************/
+.site-header{
+  background-color: var(--header-bg-color);
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.site-header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__start{
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo{
+  margin-right: 58px;
+  color: var(--main-text-color);
+}
+
+.site-nav__list{
+  display: flex;
+}
+
+.site-nav__link{
+  margin-right: 32px;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--subtitle-text-color);
+}
+
+.site-nav__link:active{
+  color: var(--main-btn-color);
+}
+
+.site-header__btn{
+  padding: 14px 39px;
+  font-size: 15px;
+  line-height: 25px;
+  border: 3px solid var(--main-btn-color);
+  background-color: var(--main-btn-color);
+  color: var(--header-bg-color);
+}
+
+.site-header__btn:active{
+  border: 3px solid var(--main-btn-color);
+  background-color: transparent;
+  color: var(--main-btn-color);
+}
+/************** HEADER STYLES END **************/
