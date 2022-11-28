@@ -94,6 +94,21 @@ a{
   text-decoration: none;
 }
 
+.site-main__btn{
+  padding: 14px 39px;
+  font-size: 15px;
+  line-height: 25px;
+  border: 3px solid var(--main-btn-color);
+  background-color: var(--main-btn-color);
+  color: var(--header-bg-color);
+}
+
+.site-main__btn:active{
+  border: 3px solid var(--main-btn-color);
+  background-color: transparent;
+  color: var(--main-btn-color);
+}
+
 /************** HEADER STYLES START **************/
 .site-header{
   background-color: var(--header-bg-color);
@@ -131,19 +146,76 @@ a{
 .site-nav__link:active{
   color: var(--main-btn-color);
 }
+/************** HEADER STYLES END **************/
 
-.site-header__btn{
-  padding: 14px 39px;
+/************** MAIN STYLES START **************/
+.site-main{
+  background-color: var(--main-bg-color);
+}
+/**** HERO SECTION START ****/
+.hero-section{
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay-bg{
+  width: 100%;
+  height: 100%;
+  padding-top: 153px;
+  padding-bottom: 152px;
+  background-color: rgba(47, 59, 89, 0.7);
+}
+
+.hero-section__title{
+  width: 550px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 56px;
+  line-height: 56px;
+  color: var(--main-bg-color);
+}
+
+.hero-section__desc{
+  position: relative;
+  width: 405px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 95px;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  border: 3px solid var(--main-btn-color);
-  background-color: var(--main-btn-color);
-  color: var(--header-bg-color);
+  color: var(--main-bg-color);  
 }
 
-.site-header__btn:active{
-  border: 3px solid var(--main-btn-color);
-  background-color: transparent;
-  color: var(--main-btn-color);
+.hero-section__desc::before{
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 503px);
+  display: inline-block;
+  width: 202px;
+  height: 15px;
+  background-image: url("../images/hero-arrow-start.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
-/************** HEADER STYLES END **************/
+
+.hero-section__desc::after{
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% + 289px);
+  display: inline-block;
+  width: 450px;
+  height: 150px;
+  background-image: url("../images/hero-arrow-end.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero-section__btn{
+  margin-left: 95px;
+}
+
+/**** HERO SECTION END ****/
+/************** MAIN STYLES END **************/
