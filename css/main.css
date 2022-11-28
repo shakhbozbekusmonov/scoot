@@ -1,3 +1,32 @@
+/* space-mono-regular - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/space-mono-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/space-mono-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/space-mono-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/space-mono-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 :root{
     /* --header-bg-color: #fff; */
     /* --main-bg-color: #fff; */
@@ -22,7 +51,8 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
   background-color: #fff;
 }
 
@@ -45,7 +75,7 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 1240px;
+  max-width: 1146px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
